@@ -1,0 +1,10 @@
+name: GitHub actions
+run-name: ${{github.actor}}
+
+on: [push]
+jobs:
+  run-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkput@v4
